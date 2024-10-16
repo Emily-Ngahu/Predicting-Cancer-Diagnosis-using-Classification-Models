@@ -27,25 +27,25 @@ The data used in this was downloaded from kaggle.Download [here](https://www.kag
   9. concavity_mean - The mean extent of concave (inward-curved) portions of the cell nucleus boundary. Larger concavities are associated with malignant cells.
   10. concave points_mean - The mean number of concave points (points where the perimeter curves inward) on the boundary of the cell nucleus. More concave points suggest
      malignancy.
-  13. 'symmetry_mean',
-  14. 'fractal_dimension_mean',
-  15. 'radius_se',
-  16. 'texture_se',
-  17. 'perimeter_se',
-  18. 'area_se',
-  19. 'smoothness_se',
-  20. 'compactness_se',
-  21. 'concavity_se',
-  22. 'concave points_se',
-  23. 'symmetry_se',
-  24. 'fractal_dimension_se',
-  25. 'radius_worst',
-  26. 'texture_worst',
-  27. 'perimeter_worst',
-  28. 'area_worst',
-  29. 'smoothness_worst',
-  30. 'compactness_worst',
-  31. 'concavity_worst',
-  32.  'concave points_worst',
-  33.   symmetry_worst',
-  34.   'fractal_dimension_worst
+  11. symmetry_mean - The mean measure of how symmetric the cell nucleus is. Malignant cells often exhibit more asymmetry.
+  12. fractal_dimension_mean - The mean "coastline" fractal dimension, which quantifies the complexity of the boundary. Malignant cells tend to have more complex, irregular       boundaries.
+  13. radius_se - The standard error of the radius measurements. Higher values indicate variability in cell sizes, which may indicate malignancy.
+  14. texture_se - The standard error of texture measurements, indicating variability in surface texture.
+  15. perimeter_se - The standard error of the perimeter measurements. Higher values reflect variability in the cell boundaries.
+  16. area_se - The standard error of the area measurements. Large variability in cell areas is often associated with malignancy.
+  17. smoothness_se - The standard error of smoothness measurements, reflecting variability in edge smoothness.
+  18. compactness_se - The standard error of compactness measurements, indicating variability in how tightly packed the cell is.
+  19. concavity_se - The standard error of concavity measurements, showing the variability in the inward curvature of the cell boundaries.
+  20. concave points_se - The standard error of the number of concave points, reflecting the variability in boundary concavities.
+  21. symmetry_se - The standard error of symmetry measurements, indicating how variable the symmetry is between different cells.
+  22. fractal_dimension_se - The standard error of fractal dimension measurements, capturing the variability in boundary complexity.
+  23. radius_worst - The largest mean radius observed across all cells.
+  24. texture_worst - The worst texture measurement, representing the most extreme variation in surface smoothness among the cells.
+  25. perimeter_worst - The largest perimeter measurement observed, indicating the most extreme cell size.
+  26. area_worst - The largest area measurement observed across cells.
+  27. smoothness_worst - The worst smoothness value, representing the least smooth or roughest cell boundary.
+  28. compactness_worst - The most extreme compactness value observed.
+  29. concavity_worst - The largest concavity observed, representing the cell with the most inward curvature.
+  30. concave points_worst - The most concave points observed across cells.
+  31. symmetry_worst - The least symmetric cell observed.
+  32. fractal_dimension_worst - The most complex or irregular cell boundary observed across all cells.
