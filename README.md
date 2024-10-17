@@ -72,6 +72,22 @@ The data used in this was downloaded from kaggle.Download [here](https://www.kag
 
      ![image](https://github.com/user-attachments/assets/b6e51be0-ab14-4bdb-ae52-9e83d789cb6f)
 
+     e) How does compactness_mean vary between malignant and benign diagnoses?
+
+     ![image](https://github.com/user-attachments/assets/f95e1795-35b1-4589-bb7c-dc555340a6dc)
+     
+  3. ### Multivariate EDA
+     f) How do radius_mean, texture_mean, and area_mean interact across different diagnoses?
+
+     ![image](https://github.com/user-attachments/assets/197a5c75-430b-4640-a7e3-f86ad73a4214)
+
+     g) What are the principal components that explain the variance in the dataset?
+
+     ![image](https://github.com/user-attachments/assets/85c6aeca-edf4-4330-bf20-2df174655239)
+
+
+
+
 
 
 
