@@ -85,6 +85,53 @@ The data used in this was downloaded from kaggle.Download [here](https://www.kag
 
      ![image](https://github.com/user-attachments/assets/85c6aeca-edf4-4330-bf20-2df174655239)
 
+## Data preprocessing 
+In order to use the data to train the models, we need to pre- process it. 
+1. We first encode the diagnosis column, since it is an object column, we encode it to transform it to a numerical column.
+2. We then select the columns that are highly correlated with the target variable.
+   - We get the correlation values.
+   - We ten select the values using a thershold of 0.2.
+   - 25 rows are selected i.e (radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean,     
+     concavity_mean, concave points_mean, symmetry_mean, radius_se, perimeter_se, area_se, compactness_se, concavity_se, 
+     concave points_se, radius_worst, texture_worst, perimeter_worst, area_worst, smoothness_worst, compactness_worst, 
+     concavity_worst, concave points_worst, symmetry_worst, fractal_dimension_worst)
+## Model Building
+In this project, we will use the following models : 
+1. ### Logistic Regression:
+- Logistic Regression is a widely used model for binary classification problems, such as predicting whether breast cancer 
+  is benign or malignant. It works by modeling the probability that an instance belongs to a particular class (e.g., 
+  malignant) using a sigmoid function, which maps input features to a probability between 0 and 1. The model calculates a 
+  decision boundary that separates the two classes and is particularly useful when the relationship between the features 
+  and the outcome is linear. For breast cancer prediction, you can train the model on labeled data (where diagnosis is 
+  known), and it will learn the weight of each feature to predict the probability of malignancy.
+
+2. ### Decision Tree:
+- A Decision Tree classifier makes predictions by recursively splitting the dataset based on feature values, creating a 
+  tree structure where each node represents a decision based on a feature, and the leaf nodes represent the final 
+  classification (e.g., benign or malignant). It is interpretable and visually intuitive, allowing for straightforward 
+  explanations of why a particular diagnosis was made. For breast cancer prediction, the Decision Tree will learn the most 
+  important features (e.g., tumor size, texture) that best split the data to classify the type of cancer accurately.
+
+3. ### K-Nearest Neighbors (KNN):
+- KNN is a simple, non-parametric model that classifies a data point based on the majority class of its nearest neighbors. 
+  It works by calculating the distance (often Euclidean) between the new data point and all other points in the training 
+  set. For predicting breast cancer, KNN can determine whether a tumor is malignant or benign based on the labels of the 
+  most similar cases in the dataset. However, KNN’s performance depends heavily on the number of neighbors (K) and the 
+  distance metric used, making it sensitive to noisy data and the curse of dimensionality.
+
+4. ### Random Forest Classifier:
+- Random Forest is an ensemble learning method that combines multiple Decision Trees to create a more robust and accurate 
+  model. Each tree is trained on a random subset of the data, and the final prediction is made by averaging the predictions   of all trees (in classification, through a majority vote). For breast cancer prediction, Random Forest reduces   
+  overfitting compared to a single Decision Tree and improves accuracy by leveraging the wisdom of many trees. It is 
+  particularly useful for datasets with a large number of features, as it can handle high-dimensional data well.
+
+5. ### XGBoost Classifier:
+- XGBoost (Extreme Gradient Boosting) is an advanced, highly efficient boosting algorithm that builds models iteratively, 
+  where each new model corrects the errors of the previous one. It uses a combination of decision trees that focus on the 
+  most challenging cases to classify. For breast cancer prediction, XGBoost can achieve high accuracy by optimizing model 
+  performance through regularization and handling imbalanced datasets effectively. Its ability to capture complex patterns 
+  and interactions in the data makes it suitable for this task, though it requires careful tuning of hyperparameters.
+
 
 
 
