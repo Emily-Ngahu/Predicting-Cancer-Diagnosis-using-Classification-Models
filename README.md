@@ -132,6 +132,21 @@ In this project, we will use the following models :
   performance through regularization and handling imbalanced datasets effectively. Its ability to capture complex patterns 
   and interactions in the data makes it suitable for this task, though it requires careful tuning of hyperparameters.
 
+- I defined the independend(x) and response(y) variables. 
+- The data was split into train and test sets. The ratio of 80:20 was used.
+- I then standardized the independent variable using StandardScaler.
+- StandardScaler is used to standardize features by removing the mean and scaling them to unit variance, making it useful   
+  for preparing data before training machine learning models.
+- Since I will be fitting 5 models, I defined a function that fits the model on the training data, makes predictions on the 
+  test data, computes evaluation metrics, and returns a DataFrame with the results.
+  ## Results
+  1. Logistic regression
+     ### Model Evaluation Metrics
+
+| Accuracy | F1 Score | Precision | Recall | Balanced Accuracy |
+|----------|----------|-----------|--------|-------------------|
+| 0.964912 | 0.952381 | 0.975610  | 0.930233 | 0.958074         |
+
 
 
 
